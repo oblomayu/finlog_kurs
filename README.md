@@ -23,10 +23,10 @@
 ## Установка и запуск
 
 1. Установка виртуального окружения:
-python -m venv venv
-source venv/bin/activate   # Linux/macOS
-venv\Scripts\activate      # Windows
-pip install -r requirements.txt
+- python -m venv venv
+- source venv/bin/activate   # Linux/macOS
+- venv\Scripts\activate      # Windows
+- pip install -r requirements.txt
 2. Запуск проекта:
-python3 run.py
+- python3 run.py
 3. Веб-приложение будет доступно в браузере по ссылке: http://127.0.0.1:5000 или http://localhost:5000
