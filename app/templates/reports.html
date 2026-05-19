@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Финансовый отчёт</h2>
+<p>Сгенерирован: {{ now }}</p>
+<table class="table table-bordered">
+    <tr><td>Общий доход</td><td>{{ "%.2f"|format(total_income) }}</td></tr>
+    <tr><td>Общий расход</td><td>{{ "%.2f"|format(total_expense) }}</td></tr>
+    <tr><td>Баланс</td><td>{{ "%.2f"|format(balance) }}</td></tr>
+</table>
+{% endblock %}

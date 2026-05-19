@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Управление бюджетами</h2>
+
+<form method="post" action="{{ url_for('budgets.set_budget') }}" class="row g-3 mb-4">
+    <div class="col-md-4">
+        <input type="text" name="category" class="form-control" placeholder="Категория" required>
+    </div>
+    <div class="col-md-4">
+        <input type="number" step="0.01" name="limit" class="form-control" placeholder="Лимит" required>
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-success">Установить</button>
+    </div>
+</form>
+
+<h4>Текущие лимиты</h4>
+<table class="table table-bordered">
+    <thead><tr><th>Категория</th><th>Лимит</th><th></th></tr></thead>
+    <tbody>
+        {% for cat, lim in limits.items() %}
+        <tr>
+            <td>{{ cat }}</td>
+            <td>{{ lim }}</td>
+            <td>
+                <form method="post" action="{{ url_for('budgets.delete_budget', category=cat) }}" style="display:inline;">
+                    <button type="submit" class="btn btn-sm btn-danger">Удалить</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h4>Сводка за месяц <input type="month" id="monthPicker" value="{{ month }}" onchange="location.href='?month='+this.value"></h4>
+{% if summary %}
+<table class="table table-striped">
+    <thead><tr><th>Категория</th><th>Потрачено</th><th>Лимит</th><th>Остаток</th><th>%</th><th>Прогресс</th></tr></thead>
+    <tbody>
+        {% for row in summary %}
+        <tr>
+            <td>{{ row.category }}</td>
+            <td>{{ "%.2f"|format(row.spent) }}</td>
+            <td>{{ "%.2f"|format(row.limit) }}</td>
+            <td>{{ "%.2f"|format(row.remaining) }}</td>
+            <td>{{ "%.1f"|format(row.percent) }}%</td>
+            <td>{{ row.bar }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>Нет данных за выбранный месяц.</p>
+{% endif %}
+{% endblock %}

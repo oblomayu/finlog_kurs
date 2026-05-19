@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Экспорт и импорт данных</h2>
+
+<div class="row mb-4">
+    <div class="col">
+        <h5>Экспорт в ZIP</h5>
+        <a href="{{ url_for('export_import.do_export') }}" class="btn btn-primary">Скачать ZIP-архив</a>
+    </div>
+    <div class="col">
+        <h5>Импорт из ZIP</h5>
+        <form method="post" action="{{ url_for('export_import.do_import') }}" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" name="file" accept=".zip" class="form-control" required>
+                <button type="submit" class="btn btn-warning">Загрузить и импортировать</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+2026-05-19 21:43:18,475 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-19 21:43:18,476 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-19 21:43:18,476 - INFO -  * Restarting with stat
+2026-05-19 21:43:18,677 - WARNING -  * Debugger is active!
+2026-05-19 21:43:18,695 - INFO -  * Debugger PIN: 467-296-064
+2026-05-19 21:44:04,523 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-19 21:44:04,523 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-19 21:44:04,527 - INFO -  * Restarting with stat
+2026-05-19 21:44:04,745 - WARNING -  * Debugger is active!
+2026-05-19 21:44:04,763 - INFO -  * Debugger PIN: 467-296-064
+2026-05-19 21:45:35,028 - INFO - 127.0.0.1 - - [19/May/2026 21:45:35] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-19 21:45:35,053 - INFO - 127.0.0.1 - - [19/May/2026 21:45:35] "GET /transactions/ HTTP/1.1" 200 -
+2026-05-19 21:45:35,364 - INFO - 127.0.0.1 - - [19/May/2026 21:45:35] "GET /static/style.css HTTP/1.1" 200 -
+2026-05-19 21:45:36,964 - INFO - 127.0.0.1 - - [19/May/2026 21:45:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-19 21:46:24,064 - INFO -  * Detected change in '/Users/anastasiakozlova/Desktop/finlog/run.py', reloading
+2026-05-19 21:46:24,122 - INFO -  * Restarting with stat
+2026-05-19 21:46:24,492 - WARNING -  * Debugger is active!
+2026-05-19 21:46:24,509 - INFO -  * Debugger PIN: 467-296-064
+2026-05-19 21:46:29,424 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-19 21:46:29,424 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-19 21:46:35,624 - INFO - 127.0.0.1 - - [19/May/2026 21:46:35] "GET /transactions/ HTTP/1.1" 200 -
+2026-05-19 21:46:35,653 - INFO - 127.0.0.1 - - [19/May/2026 21:46:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-19 21:46:37,322 - INFO - 127.0.0.1 - - [19/May/2026 21:46:37] "GET /transactions/ HTTP/1.1" 200 -
+2026-05-19 21:46:37,345 - INFO - 127.0.0.1 - - [19/May/2026 21:46:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-19 21:46:38,199 - INFO - 127.0.0.1 - - [19/May/2026 21:46:38] "GET /budgets/ HTTP/1.1" 200 -
+2026-05-19 21:46:38,496 - INFO - 127.0.0.1 - - [19/May/2026 21:46:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-19 21:46:40,232 - INFO - 127.0.0.1 - - [19/May/2026 21:46:40] "GET /rules/ HTTP/1.1" 200 -
+2026-05-19 21:46:40,530 - INFO - 127.0.0.1 - - [19/May/2026 21:46:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-19 21:46:43,561 - INFO - 127.0.0.1 - - [19/May/2026 21:46:43] "GET /export-import/ HTTP/1.1" 200 -
+2026-05-19 21:46:43,909 - INFO - 127.0.0.1 - - [19/May/2026 21:46:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-19 21:46:45,743 - INFO - 127.0.0.1 - - [19/May/2026 21:46:45] "GET /reports/ HTTP/1.1" 200 -
+2026-05-19 21:46:46,051 - INFO - 127.0.0.1 - - [19/May/2026 21:46:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-19 21:46:48,132 - INFO - 127.0.0.1 - - [19/May/2026 21:46:48] "GET /transactions/ HTTP/1.1" 200 -
+2026-05-19 21:46:48,154 - INFO - 127.0.0.1 - - [19/May/2026 21:46:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
